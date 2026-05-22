@@ -1,0 +1,44 @@
+.projectSection{
+    min-height: 100vh;
+    min-width: 100%;
+    background: var(--color-bg-dark);
+}
+
+.projectTitle{
+    text-align: center;
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-xl);
+    color: var(--color-text-secondary);
+}
+
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap;
+}
+
+.techStack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 20px;
+}
+
+@media (max-width:768px){
+    .projectGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .projectCard{
+        margin: 10px 10px;
+        gap: 10px;
+    }
+
+    .projectContent h2{
+        font-size: 2rem;
+    }
+
+    .projectMedia img{
+        height: 200px;
+    }
+}

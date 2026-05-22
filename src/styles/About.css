@@ -1,0 +1,21 @@
+.about-container{
+    display: flex;
+    gap: 20px;
+    width: 50rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-container img{
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(194, 204, 208, 0.998);
+}
+
+.about .about-content{
+    color: #beb7b7;
+    font-size: 18px;
+    line-height: 1.8;
+    
+}
