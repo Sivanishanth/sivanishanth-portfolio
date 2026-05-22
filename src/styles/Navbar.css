@@ -4,7 +4,11 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) var(--space-lg);
-    background-color: var(--color-bg-light);
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     transition: var(--transition-normal);
     position: sticky;
     top: 0;
@@ -34,29 +38,27 @@
 @media (max-width:768px){
 
 .navbar{
-    padding: 1rem;
-    flex-wrap: wrap;
+    padding: 1rem 1.2rem;
+    flex-direction: column;
     gap: 1rem;
 }
 
 .navbar .logo{
-    font-size: 2rem;
-    width: 100%;
+    font-size: 1.5rem;
+    width: auto;
     text-align: center;
 }
 
 .navbar .nav-links{
     width: 100%;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 1rem;
 }
 
 .navbar .nav-links a{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 }

@@ -16,9 +16,21 @@ export default function ProjectCard(props) {
                 })}
             </div>
             <div className="projectLinks">
-                <a href={props.github} target='_blank'>GitHub</a>
+                <a 
+                href={props.github} 
+                target='_blank'
+                rel="noopener noreferrer">
+                    GitHub
+                </a>
+
                 {props.live && (
-                    <a href={props.live} target='_blank'>Live</a>
+                    <a 
+                    href={props.live} 
+                    target='_blank'
+                    rel="noopner noreferrer"
+                    >
+                        Live
+                    </a>
                 )}
             </div>
         </div>

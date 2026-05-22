@@ -13,8 +13,10 @@
 
 .projectGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .techStack{
@@ -25,20 +27,18 @@
 }
 
 @media (max-width:768px){
+
+    .projectSection{
+        padding: 4rem 1rem;
+    }
+
     .projectGrid{
-        grid-template-columns: 1fr;
+        margin: 0;
+        border-radius: 20px;
     }
 
-    .projectCard{
-        margin: 10px 10px;
-        gap: 10px;
-    }
-
-    .projectContent h2{
-        font-size: 2rem;
-    }
-
-    .projectMedia img{
-        height: 200px;
+    .prjectMedia{
+        height: 180px;
+        /* padding: 20px; */
     }
 }

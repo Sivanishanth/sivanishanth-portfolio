@@ -15,7 +15,8 @@ export default function Hero() {
           </p>
 
           <h1 className="hero-title">
-            Hi, I'm <span className="highlight">Siva Nishanth</span>
+            <span>Hi, I'm </span>
+            <span className="highlight">Sivanishanth</span>
           </h1>
 
           <p className="hero-description">

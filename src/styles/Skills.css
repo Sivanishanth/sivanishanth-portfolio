@@ -1,5 +1,7 @@
-.skills-container{
+.skills-container {
     padding: var(--space-lg) var(--space-lg);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .skills-section{
@@ -12,29 +14,31 @@
 .title{
     text-align: center;
     font-size: var(--text-3xl);
-    margin-bottom: var(--space-xl);
+    margin-bottom: 14px;
     color: var(--color-text-secondary);
 }
 
 .skills-section ul{
     font-size: 1rem;
-    background:#111827;
-    padding:20px;
+    background:rgba(15,23,42,0.75);
+    backdrop-filter:blur(10px);
+    padding:18px;
     border-radius:20px;
     list-style:none;
 
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:10px;
 
-    min-height:220px;
-    box-shadow: 3px 3px 10px;
+    min-height:200px;
     transition:0.3s ease;
     border:1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 .skills-section ul:hover{
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(139,92,246,0.2);
 }
 
 .skills-section ul li:first-child{
@@ -48,11 +52,50 @@
 }
 
 .skills-section ul li:not(:first-child) {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 8px 14px;
-    margin: 6px;
-    border-radius: 30px;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
+    transition: 0.3s ease;
+}
+
+.skills-section ul li:not(:first-child):hover{
+    transform:translateX(5px);
+    border-color:rgba(139,92,246,0.4);
+}
+
+.skills-section svg{
+    font-size:1.2rem;
+    color:#8B5CF6;
+    flex-shrink:0;
+}
+
+@media (max-width:768px){
+
+    .skills-container{
+        padding:4rem 1rem;
+    }
+
+    .skills-section{
+        grid-template-columns:1fr;
+        gap:1.5rem;
+    }
+
+    .skills-section ul{
+        min-height:auto;
+        padding:16px;
+    }
+
+    .skills-section ul li:first-child{
+        font-size:1.3rem;
+        margin-bottom:12px;
+    }
+
+    .skills-section ul li:not(:first-child){
+        padding:10px 12px;
+        font-size:0.95rem;
+    }
 }
