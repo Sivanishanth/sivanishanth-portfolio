@@ -81,7 +81,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-https://sivaishanthportfolio.netlify.app/
+https://sivanishanth-portfolio.netlify.app/
 
 ---
 
