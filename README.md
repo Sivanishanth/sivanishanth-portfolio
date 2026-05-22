@@ -81,7 +81,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-https://your-vercel-link.vercel.app
+sivaishanthportfolio.netlify.app
 
 ---
 
