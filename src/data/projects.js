@@ -28,7 +28,7 @@ const projects = [
         image : imgPortfolio,
         tech : ["React" ,"HTML", "CSS" ,"JavaScript"],
         github : "https://github.com/Sivanishanth/myPortfolio",
-        live : "https://sivaishanthportfolio.netlify.app/",
+        live : "https://sivanishanth-portfolio.netlify.app/",
         feature : true
     }
 ]
